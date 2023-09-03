@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <title>電卓</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        <div class="calculator">
+            <div class="header">
+                <input id="result" type="text" value="">
+            </div>
+            
+            <div>
+                <input class="numButton" type="button" value="7" onclick="numClick(7)">
+                <input class="numButton" type="button" value="8" onclick="numClick(8)">
+                <input class="numButton" type="button" value="9" onclick="numClick(9)">
+                <input class="calButton" type="button" value="+" onclick="calClick('+')">
+            </div>
+            
+            <div>
+                <input class="numButton" type="button" value="4" onclick="numClick(4)">
+                <input class="numButton" type="button" value="5" onclick="numClick(5)">
+                <input class="numButton" type="button" value="6" onclick="numClick(6)">
+                <input class="calButton" type="button" value="-" onclick="calClick('-')">
+            </div>
+            
+            <div>
+                <input class="numButton" type="button" value="1" onclick="numClick(1)">
+                <input class="numButton" type="button" value="2" onclick="numClick(2)">
+                <input class="numButton" type="button" value="3" onclick="numClick(3)">
+                <input class="calButton" type="button" value="×" onclick="calClick('*')">
+            </div>
+            
+            <div>
+                <input class="numButton" id="zero" type="button" value="0" onclick="numClick(0)">
+                <input class="numButton" type="button" value="0." onclick="numClick('0.')">
+                <input class="numButton" type="button" value="." onclick="numClick('.')">
+                <input class="calButton" type="button" value="÷" onclick="calClick('/')">
+            </div>
+            
+            <div>
+                <input class="underButton" id="reset" type="button" value="C" onclick="cClick()">
+                <input class="underButton" id="equal" type="button" value="=" onclick="equal_click('=')">
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
